@@ -45,8 +45,8 @@ class CsvConnector(BaseConnector):
     distinct identity, unless you also give a separate customers file (``customers_path``...).
 
     ``mapping`` is ``{"customer": {field: column}, "transaction": {field: column}}``, an
-    :class:`~tillsync.automap.AutoMapping`, or None to guess it with
-    :func:`~tillsync.automap.automap` (inspect the guess at ``connector.automapping``).
+    ``AutoMapping``, or None to guess it with
+    ``automap`` (inspect the guess at ``connector.automapping``).
     Naive times are read in ``timezone`` (IANA name, default UTC); bare phone numbers get
     ``default_country``.
     """

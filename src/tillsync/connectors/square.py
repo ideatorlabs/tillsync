@@ -5,7 +5,7 @@ Endpoints used: ``GET /v2/locations``, ``GET /v2/customers`` and ``POST /v2/cust
 converted (``1999`` USD cents -> ``19.99``). Completed refunds on an order become separate
 refund transactions with negative amounts; cancelled orders are skipped.
 
-``base_url`` defaults to production; use :data:`SANDBOX_URL` for the sandbox, or any URL (a
+``base_url`` defaults to production; use ``SANDBOX_URL`` for the sandbox, or any URL (a
 proxy, a test server). Create an access token in the Square developer dashboard.
 """
 

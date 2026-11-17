@@ -155,7 +155,7 @@ class StreamCursor:
 
 @dataclass
 class Cursor:
-    """Resume point for :func:`tillsync.sync`. Store ``to_json()`` and pass it back next time."""
+    """Resume point for ``tillsync.sync``. Store ``to_json()`` and pass it back next time."""
 
     customers: StreamCursor = field(default_factory=StreamCursor)
     transactions: StreamCursor = field(default_factory=StreamCursor)

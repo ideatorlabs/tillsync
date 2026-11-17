@@ -1,7 +1,7 @@
 """Reading CSV, TSV and Excel files into a header list and row dicts.
 
 Exports are messy: a title line above the header, a byte-order mark, semicolons instead of
-commas, blank or repeated column names. :func:`parse_csv_text` and :func:`read_table` deal with
+commas, blank or repeated column names. ``parse_csv_text`` and ``read_table`` deal with
 those so connectors only see clean ``{header: value}`` rows.
 """
 
@@ -66,7 +66,7 @@ def _unique_headers(raw: list[Any]) -> list[str]:
 
 
 def parse_rows(grid: list[list[Any]]) -> Table:
-    """Turn a list of rows (first meaningful one is the header) into a :class:`Table`."""
+    """Turn a list of rows (first meaningful one is the header) into a ``Table``."""
     grid = [list(r) for r in grid]
     if not grid:
         return Table(headers=[])

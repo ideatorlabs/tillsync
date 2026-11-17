@@ -1,7 +1,7 @@
 """Item-level exports: one row per product sold, keyed by bill number.
 
-Many POS systems export bills and their items separately. :func:`read_line_items` groups an item
-file by bill number and :func:`attach_line_items` puts the items onto bills you already read.
+Many POS systems export bills and their items separately. ``read_line_items`` groups an item
+file by bill number and ``attach_line_items`` puts the items onto bills you already read.
 Attaching replaces a bill's items, so re-running it never doubles them.
 """
 

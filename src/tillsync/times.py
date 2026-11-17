@@ -4,7 +4,7 @@ Rules:
 
 * An explicit offset or ``Z`` is respected.
 * A value with no zone is a wall-clock time in the connector's time zone (``tz``).
-* A date with no time of day is midnight in ``tz``; :func:`has_time_of_day` tells you which.
+* A date with no time of day is midnight in ``tz``; ``has_time_of_day`` tells you which.
 * Epoch seconds and milliseconds are UTC.
 * Every result is a timezone-aware ``datetime`` in UTC, or None when the value can't be read.
   A bad date is never silently replaced with "now".

@@ -66,7 +66,7 @@ def check_url(
     allow_link_local: bool = False,
     resolver: Resolver | None = None,
 ) -> None:
-    """Raise :class:`BlockedURLError` unless ``url`` is http(s) and all its addresses are allowed."""
+    """Raise ``BlockedURLError`` unless ``url`` is http(s) and all its addresses are allowed."""
     parts = urlsplit(str(url))
     if parts.scheme not in ("http", "https"):
         raise BlockedURLError("only http and https URLs can be fetched")

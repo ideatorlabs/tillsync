@@ -16,7 +16,7 @@ class Connector(Protocol):
     """Anything that can list customers and transactions.
 
     ``since`` is an aware UTC datetime or None. Connectors should return records whose
-    ``cursor_time`` is at or after ``since`` (``>=``); :func:`tillsync.sync` removes the
+    ``cursor_time`` is at or after ``since`` (``>=``); ``tillsync.sync`` removes the
     ones it already delivered. Returning older records is allowed but wasteful.
     """
 
@@ -53,7 +53,7 @@ C = TypeVar("C", bound=Callable[..., Any])
 
 
 def register(name: str) -> Callable[[C], C]:
-    """Class decorator that makes a connector creatable by name with :func:`create`."""
+    """Class decorator that makes a connector creatable by name with ``create``."""
 
     def deco(cls: C) -> C:
         key = name.strip().lower()

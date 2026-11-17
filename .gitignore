@@ -31,3 +31,6 @@ htmlcov/
 .vscode/
 *.swp
 .DS_Store
+
+# MkDocs build output
+site/

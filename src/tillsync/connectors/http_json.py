@@ -126,7 +126,7 @@ def map_customer(
     options: Mapping[str, Any] | None = None,
     report: ImportReport | None = None,
 ) -> RawCustomer | None:
-    """Map one JSON object to a :class:`RawCustomer` using ``fields`` (field -> path).
+    """Map one JSON object to a ``RawCustomer`` using ``fields`` (field -> path).
 
     Useful on its own for webhook payloads. Returns None when the record has no identity.
     """
@@ -186,7 +186,7 @@ def map_transaction(
     report: ImportReport | None = None,
     content_seen: dict[str, int] | None = None,
 ) -> RawTransaction | None:
-    """Map one JSON object to a :class:`RawTransaction`. Returns None (and counts why) when it
+    """Map one JSON object to a ``RawTransaction``. Returns None (and counts why) when it
     can't be used: unreadable date or amount, or a cancelled bill."""
     opt = _Options(options or {})
     report = report or ImportReport()

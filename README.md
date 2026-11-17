@@ -1,11 +1,13 @@
-<p align="center"><img src="https://raw.githubusercontent.com/ideatorlabs/.github/main/assets/avatar.png" width="72" alt="Ideator Labs"></p>
+<p align="center"><a href="https://ideatorlabs.github.io/tillsync/"><img src="https://raw.githubusercontent.com/ideatorlabs/tillsync/main/docs/assets/brand/banner.png" alt="TillSync: Every POS, API and spreadsheet, one clean shape. By Ideator Labs." width="100%"></a></p>
 <h1 align="center">TillSync</h1>
 <p align="center"><b>Pull customers and sales from POS systems, APIs and spreadsheets into one clean shape.</b><br><sub>An open-source package by <a href="https://github.com/ideatorlabs">Ideator Labs</a></sub></p>
 <p align="center">
 <a href="https://github.com/ideatorlabs/tillsync/actions/workflows/ci.yml"><img src="https://github.com/ideatorlabs/tillsync/actions/workflows/ci.yml/badge.svg" alt="CI"></a>
+<a href="https://ideatorlabs.github.io/tillsync/"><img src="https://img.shields.io/badge/docs-ideatorlabs.github.io%2Ftillsync-0EA5E9.svg" alt="Documentation"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/license-Apache--2.0-blue.svg" alt="License: Apache-2.0"></a>
 <img src="https://img.shields.io/badge/python-3.10%2B-blue.svg" alt="Python 3.10+">
 </p>
+<p align="center"><b><a href="https://ideatorlabs.github.io/tillsync/">Documentation</a></b> · <a href="https://ideatorlabs.github.io/tillsync/#60-second-quickstart">Quickstart</a> · <a href="https://ideatorlabs.github.io/tillsync/reference/">API reference</a> · <a href="CHANGELOG.md">Changelog</a></p>
 
 ## Why it exists
 

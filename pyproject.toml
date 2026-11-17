@@ -45,7 +45,8 @@ dev = [
 tillsync = "tillsync.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/ideatorlabs/tillsync"
+Homepage = "https://ideatorlabs.github.io/tillsync/"
+Documentation = "https://ideatorlabs.github.io/tillsync/"
 Repository = "https://github.com/ideatorlabs/tillsync"
 Issues = "https://github.com/ideatorlabs/tillsync/issues"
 

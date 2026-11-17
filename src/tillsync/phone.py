@@ -40,7 +40,7 @@ def is_masked_phone(value: object) -> bool:
     """True for a number a marketplace or POS has hidden (``98******10``, ``XXXXXX3210``).
 
     A masked cell that still holds a full number (``9*876543210``) is not hidden; see
-    :func:`clean_phone`.
+    ``clean_phone``.
     """
     s = str(value or "").strip()
     if not s or not any(c in _MASK_CHARS for c in s) or not _PHONE_CHARS.match(s):
@@ -67,7 +67,7 @@ def normalize_phone(value: object, default_country_code: str | None = None) -> s
     """Return ``+<country><number>`` or None when the value can't be a phone number.
 
     ``default_country_code`` is a calling code such as ``"1"``, ``"44"`` or ``"91"``. Without it,
-    :func:`default_country` is used.
+    ``default_country`` is used.
     """
     s = clean_phone(value)
     if not s or re.search(r"[A-Za-z]", s):

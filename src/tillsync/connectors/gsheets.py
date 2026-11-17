@@ -2,7 +2,7 @@
 
 The sheet must be readable without signing in ("Anyone with the link can view", or
 File > Share > Publish to web as CSV). Any sheet link is turned into its CSV export URL; the CSV
-is then read exactly like a file by :class:`~tillsync.connectors.csv_file.CsvConnector`.
+is then read exactly like a file by ``CsvConnector``.
 No Google API key or OAuth is involved.
 """
 
@@ -53,7 +53,7 @@ def to_csv_url(url: str, base: str = "https://docs.google.com") -> str:
 class GoogleSheetsConnector(BaseConnector):
     """Sales (and optionally customers) from publicly readable Google Sheets.
 
-    Accepts every option :class:`CsvConnector` does (``mapping``, ``timezone``,
+    Accepts every option ``CsvConnector`` does (``mapping``, ``timezone``,
     ``default_country``...). The download goes through an SSRF-guarded client unless you pass
     your own ``client``.
     """
@@ -105,7 +105,7 @@ class GoogleSheetsConnector(BaseConnector):
         return text
 
     def load(self) -> CsvConnector:
-        """Download the sheet(s) now and return the underlying :class:`CsvConnector`."""
+        """Download the sheet(s) now and return the underlying ``CsvConnector``."""
         sales = self._download(self.url)
         customers = self._download(self.customers_url) if self.customers_url else None
         self._csv = CsvConnector(text=sales, customers_text=customers, **self._options)

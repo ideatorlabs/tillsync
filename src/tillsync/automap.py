@@ -259,7 +259,7 @@ class FieldGuess:
 
 @dataclass(frozen=True)
 class AutoMapping:
-    """The result of :func:`automap`. Immutable; :meth:`override` returns a new one."""
+    """The result of ``automap``. Immutable; ``override`` returns a new one."""
 
     customer: dict[str, FieldGuess] = field(default_factory=dict)
     transaction: dict[str, FieldGuess] = field(default_factory=dict)
