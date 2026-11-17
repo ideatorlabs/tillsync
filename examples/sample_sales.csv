@@ -1,0 +1,15 @@
+Sales Register - Demo Café,,,,,,,,,
+Bill No.,Bill Date,Time,Customer Name,Mobile No.,E-mail,Net Amount (₹),Status,Outlet,Payment Mode
+B-1001,03/01/2026,09:15 AM,Asha Rao,+91 99999 00001,asha@example.com,"₹ 1,250.00",Paid,Main Street,UPI
+B-1002,03/01/2026,10:40 AM,Ravi Shah,9999900002,,Rs. 480/-,Paid,Main Street,Cash
+B-1003,04/01/2026,13:05,Sam Iyer,099999 00003,sam@example.com,"1,20,000",Paid,Lake View,Card
+B-1004,05/01/2026,18:30,Asha Rao,+91 99999 00001,,-250,Paid,Main Street,UPI
+B-1005,06/01/2026,19:45,Guest,9999900004,,(120.00),Refunded,Lake View,Cash
+B-1006,07/01/2026,12:00,Meera Nair,9999900005,meera@example.com,640,Cancelled,Main Street,Card
+B-1002,03/01/2026,10:40 AM,Ravi Shah,9999900002,,Rs. 480/-,Paid,Main Street,Cash
+B-1007,not a date,11:00,Kabir Das,9999900006,,300,Paid,Main Street,Cash
+B-1008,08/01/2026,20:10,Online Order,99******02,,560,Paid,Lake View,Online
+B-1009,13/01/2026,,Ravi Shah,9999900002,,two hundred,Paid,Main Street,Cash
+B-1010,14/01/2026,08:05 PM,Ravi Shah,9999900002,,"$ 15.50",Paid,Lake View,Card
+
+Total,,,,,,"1,22,371.50",,,

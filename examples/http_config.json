@@ -1,0 +1,41 @@
+{
+  "base_url": "http://127.0.0.1:8765",
+  "allow_private": true,
+  "auth": {"type": "bearer", "token_env": "DEMO_POS_TOKEN"},
+  "timezone": "Asia/Kolkata",
+  "default_country": "91",
+  "currency": "INR",
+  "customers": {
+    "path": "/api/customers",
+    "records": "data",
+    "since_param": "updated_since",
+    "since_format": "iso",
+    "pagination": {"type": "page", "param": "page", "start": 1, "size_param": "per_page", "size": 2,
+                   "total_path": "meta.total"},
+    "fields": {
+      "external_id": "id",
+      "name": ["first_name", "last_name"],
+      "phone": "contact.mobile",
+      "email": "contact.email",
+      "first_seen_at": "created_at",
+      "updated_at": "updated_at"
+    }
+  },
+  "transactions": {
+    "path": "/api/orders",
+    "records": "orders",
+    "since_param": "updated_since",
+    "pagination": {"type": "cursor", "param": "cursor", "next_path": "next_cursor", "size_param": "limit",
+                   "size": 2},
+    "fields": {
+      "external_id": "number",
+      "customer_ref": "customer.id",
+      "occurred_at": "closed_at",
+      "updated_at": "updated_at",
+      "amount": "total",
+      "status": "state",
+      "doc_type": "type",
+      "line_items": {"path": "items", "name": "title", "quantity": "qty", "unit_price": "price"}
+    }
+  }
+}
